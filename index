@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ole.exe 💗</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="floating-hearts"></div>
+
+    <main class="game-container">
+
+        <div class="game-logo">💗 OLE.EXE 💗</div>
+
+        <!-- START SCREEN -->
+        <section id="startScreen" class="screen active">
+
+            <div class="big-emoji">🎀</div>
+
+            <h1>Welcome, Ole!</h1>
+
+            <p class="subtitle">
+                A very serious and highly sophisticated game
+                has been created specifically for you.
+            </p>
+
+            <div class="warning-box">
+                ⚠️ WARNING ⚠️
+                <br>
+                This game may contain excessive amounts of cuteness,
+                stupidity and romance.
+            </div>
+
+            <button class="main-button" onclick="startGame()">
+                START THE GAME 💕
+            </button>
+
+        </section>
+
+
+        <!-- LEVEL 1 -->
+        <section id="level1" class="screen">
+
+            <div class="level-number">LEVEL 1</div>
+
+            <div class="big-emoji">⛺❤️</div>
+
+            <h2>THE BEGINNING</h2>
+
+            <p>
+                Every great story has a beginning...
+            </p>
+
+            <p>
+                So, Ole, where did this particular story begin?
+            </p>
+
+            <div class="choices">
+
+                <button onclick="correctAnswer(1)">
+                    Leadership Camp ⛺
+                </button>
+
+                <button onclick="wrongAnswer('Girl 😭 you were actually there. Try again.')">
+                    Narnia 🦁
+                </button>
+
+                <button onclick="wrongAnswer('Interesting theory... but no 😂')">
+                    At a KFC 🍗
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEVEL 2 -->
+        <section id="level2" class="screen">
+
+            <div class="level-number">LEVEL 2</div>
+
+            <div class="big-emoji">😂</div>
+
+            <h2>THE EXCITEMENT TEST</h2>
+
+            <p>
+                There is one phrase that must never be forgotten...
+            </p>
+
+            <div class="special-phrase">
+                SO EXCIDEHD!!
+            </div>
+
+            <p>
+                Complete the sentence:
+            </p>
+
+            <div class="choices">
+
+                <button onclick="correctAnswer(2)">
+                    SO EXCIDEHD!! 😭💗
+                </button>
+
+                <button onclick="wrongAnswer('Nope. That is not nearly enough excitement 😂')">
+                    Very mildly interested.
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEVEL 3 -->
+        <section id="level3" class="screen">
+
+            <div class="level-number">LEVEL 3</div>
+
+            <div class="big-emoji">👀</div>
+
+            <h2>IDENTIFY THE SUSPECT</h2>
+
+            <p>
+                Someone is responsible for creating this suspiciously
+                romantic game.
+            </p>
+
+            <p>
+                Who is the main suspect?
+            </p>
+
+            <div class="choices">
+
+                <button onclick="correctAnswer(3)">
+                    Me 😌
+                </button>
+
+                <button onclick="wrongAnswer('The FBI has denied involvement. 🕵️😂')">
+                    The FBI 🕵️
+                </button>
+
+                <button onclick="wrongAnswer('The President was not consulted. 😂')">
+                    The President 👔
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- LEVEL 4 -->
+        <section id="level4" class="screen">
+
+            <div class="level-number">LEVEL 4</div>
+
+            <div class="big-emoji">😁❤️</div>
+
+            <h2>THE SECRET WEAPON</h2>
+
+            <p>
+                Every superhero has a special ability.
+            </p>
+
+            <p>
+                What is Ole's most dangerous weapon?
+            </p>
+
+            <div class="choices">
+
+                <button onclick="correctAnswer(4)">
+                    That adorable gap between her teeth 🥹❤️
+                </button>
+
+                <button onclick="wrongAnswer('Close... but not quite 😂')">
+                    Her evil laugh 😈
+                </button>
+
+                <button onclick="wrongAnswer('Definitely not 😭')">
+                    Her ability to disappear 👻
+                </button>
+
+            </div>
+
+        </section>
+
+
+        <!-- FINAL QUESTION -->
+        <section id="finalScreen" class="screen">
+
+            <div class="level-number">FINAL LEVEL</div>
+
+            <div class="big-emoji">💘</div>
+
+            <h2>THE FINAL QUESTION</h2>
+
+            <p>
+                Ole...
+            </p>
+
+            <p>
+                You've successfully completed this completely
+                unnecessary but extremely important game.
+            </p>
+
+            <div class="question">
+                Will you be my girlfriend? ❤️
+            </div>
+
+            <div class="final-buttons">
+
+                <button class="yes-button" onclick="sayYes()">
+                    YES 💕
+                </button>
+
+                <button class="no-button" id="noButton" onclick="sayNo()">
+                    NO 😭
+                </button>
+
+            </div>
+
+            <p id="noMessage" class="small-message"></p>
+
+        </section>
+
+
+        <!-- SUCCESS SCREEN -->
+        <section id="successScreen" class="screen">
+
+            <div class="celebration">
+                🎉💗🎉
+            </div>
+
+            <h1>QUEST COMPLETE!</h1>
+
+            <h2>GIRLFRIEND ACQUIRED ❤️</h2>
+
+            <p class="subtitle">
+                Congratulations, Ole.
+            </p>
+
+            <div class="achievement-card">
+
+                <h3>🏆 ACHIEVEMENT UNLOCKED</h3>
+
+                <div class="achievement-title">
+                    MY GIRL ❤️
+                </div>
+
+                <p>
+                    ⛺ Origin Story: Leadership Camp
+                </p>
+
+                <p>
+                    😂 Special Phrase: SO EXCIDEHD!!
+                </p>
+
+                <p>
+                    😁 Critical Hit: That beautiful gap
+                </p>
+
+                <p>
+                    💗 Relationship Status: Official
+                </p>
+
+            </div>
+
+            <div class="final-message">
+
+                <p>
+                    I know I could have just asked you normally...
+                </p>
+
+                <p>
+                    But where's the fun in that? 😂
+                </p>
+
+                <p>
+                    I wanted to make something silly,
+                    something you'll hopefully remember,
+                    and something that could make you smile.
+                </p>
+
+                <p class="love-message">
+                    ❤️ I'm really glad I met you, Ole. ❤️
+                </p>
+
+                <p>
+                    So... welcome to the next chapter. 🥹💗
+                </p>
+
+            </div>
+
+            <div class="reward">
+                🎁 Your reward is waiting for you.
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Music -->
+    <audio id="backgroundMusic" loop>
+        <source src="all-for-you.mp3" type="audio/mpeg">
+    </audio>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
